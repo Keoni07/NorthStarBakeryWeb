@@ -1,0 +1,100 @@
+/*	General Design/Styling      */
+
+body {
+	background-color: peachpuff;
+	font-family: Georgia, serif;
+	color: black;
+	line-height: 1.5;
+	padding: 16px;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+h1, h2, h3 {
+	color: maroon;
+	font-family: system-ui, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*	Navigation	*/
+
+nav {
+	border-bottom: 4px solid black;
+	margin-bottom: 16px;
+}
+
+a {
+	color: maroon;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+}
+
+nav li {
+	margin-bottom: 8px;
+}
+
+
+/*	Main      */
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*	Forms      */
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-family: system-ui, sans-serif;
+	margin-top: 8px;
+}
+
+input, textarea {
+	padding: 6px;
+	margin-bottom: 8px;
+}
+
+button {
+	background-color: maroon;
+	color: white;
+	padding: 12px;
+	border: none;
+}
+
+
+/*	Footer      */
+
+footer {
+	border-top: 4px double black;
+	margin-top: 16px;
+	padding-top: 16px
+}
+
+
+/*	Larger Screen Design      */
+
+@media (min-width: 700px) {
+	nav ul {
+		flex-direction: row;
+	}
+	nav li {
+		margin-right: 24px;
+	}
+}

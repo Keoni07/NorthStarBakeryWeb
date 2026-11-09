@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+	<link rel="stylesheet" href="styless.css">
+	<meta charset=“UTF-8”>
+	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+	<title>North Star Bakery: Conctacts</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>
+		</nav>
+		<h1>We don't bite haha, talk to us!</h1>
+	</header>
+	<main>
+		<h2>Inquiries/Pre-order Request Form</h2>
+		<form action="/submit-contact">
+			<fieldset>
+				<legend>Contact Info</legend>
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="name" required><br><br>
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email" required><br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Request Info</legend>
+				<label for="request_type">Request Type</label>
+				<select id="request_type" name="request_type" required><br><br>
+        				<option value="" disabled selected>Select an option...</option>
+        				<option value="pre_order">Pre-Order</option>
+        				<option value="general_question">General Question</option>
+    				</select><br><br>
+				<label for="pickup_date">Pickup Date</label>
+    				<input type="date" id="pickup_date" name="pickup_date"><br><br>
+				<label for="item_details">Request Details</label><br>
+    				<textarea id="item_details" name="item_details" required></textarea><br><br>
+				<label for="allergy_notes">Any Allergies?</label><br>
+    				<textarea id="allergy_notes" name="allergy_notes"></textarea><br>
+			</fieldset><br>
+			<button type="submit">Submit Request</button>
+		</form>
+
+		<h3>Our Location</h3>
+		<h3>Hours of operation.. again</h3>
+	</main>
+	<footer>
+		 <p>Privacy Policy, Terms of Service, and Cookie Policy</p>
+	</footer>
+</body>
+</html>

@@ -1,10 +1,3 @@
-/* connect the video file and audio file on index.html
-
-javascript form validation add to contact.html
-
-use local/session storage for the form in contact.html
-*/
-
 const video = document.getElementById("bakeryVideo");
 const audio = document.getElementById("bakeryAudio");
 
